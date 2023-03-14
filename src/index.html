@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        padding: 20px;
+        border: 1px solid grey;
+        border-radius: 10px;
+      }
+      .btn {
+        padding: 10px;
+        background-color: coral;
+        border: 1px solid coral;
+        border-radius: 10px;
+        font-size: 20px;
+      }
+      .mt10 {
+        margin-top: 10px;
+      }
+    </style>
+    <script>
+      const clickButton = () => {
+        alert("눌러졌다!!");
+      };
+
+      function showMyName() {
+        document.getElementById("my-name").innerHTML = "유광종";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <h1>안녕 웹 어플리케이션!</h1>
+    </header>
+    <section>
+      <div class="box">
+        <div><h3>여기서 재밌는 것들을 해보자</h3></div>
+        <div>
+          <button class="btn" onclick="clickButton()">나를 클릭해봐!</button>
+        </div>
+        <div class="mt10">
+          <button class="btn" onclick="showMyName()">
+            내 이름이 궁금하면 클릭
+          </button>
+        </div>
+        <div>이게 바로 나의 이름 : <span id="my-name"></span></div>
+      </div>
+    </section>
+  </body>
+</html>
